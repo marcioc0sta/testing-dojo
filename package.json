@@ -8,8 +8,7 @@
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:all": "jest --passWithNoTests"
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "next": "10.0.6",
@@ -55,7 +54,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn test:all",
+      "pre-push": "yarn test",
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
