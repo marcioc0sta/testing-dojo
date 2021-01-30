@@ -8,7 +8,8 @@
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:all": "jest --env=jsdom --passWithNoTests"
   },
   "dependencies": {
     "next": "10.0.6",
@@ -54,7 +55,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn test",
+      "pre-push": "yarn test:all",
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
