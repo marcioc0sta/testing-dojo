@@ -1,13 +1,33 @@
 {
   "presets": ["next/babel"],
   "plugins": [
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
     [
-      "styled-components",
+      "babel-plugin-root-import",
       {
-        "ssr": true,
-        "displayName": true,
-        "preprocess": false
+        "functions": ["jest.mock", "jest.unmock"],
+        "paths": [
+          {
+            "rootPathSuffix": "./src",
+            "rootPathPrefix": "~/"
+          },
+          {
+            "rootPathSuffix": "./public/assets",
+            "rootPathPrefix": "~assets/"
+          },
+          {
+            "rootPathSuffix": "./pages",
+            "rootPathPrefix": "~pages/"
+          }
+        ]
       }
-    ]
-  ]
+    ],
+    ["styled-components", { "ssr": true }]
+  ],
+  "env": {
+    "test": {
+      "presets": ["next/babel", "@babel/preset-react"]
+    }
+  }
 }

@@ -1,0 +1,16 @@
+export default {
+  TURQUOISE: '#1abc9c',
+  EMERALD: '#2ecc71',
+  RIVER: '#3498db',
+  BELIZE: '#2980b9',
+  AMETHYST: '#9b59b6',
+  SUN: '#f1c40f',
+  ORANGE: '#f39c12',
+  DANGER: '#e74c3c',
+  TOMATO: '#c0392b',
+  WHITE: '#fff',
+  CLOUD: '#ecf0f1',
+  CONCRETE: '#95a5a6',
+  ASPHALT: '#34495e',
+  MIDNIGHT: '#2c3e50',
+}

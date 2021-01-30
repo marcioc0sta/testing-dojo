@@ -16,6 +16,7 @@
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "source-map-support": "^0.5.19",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -64,5 +65,42 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/setup-test.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "babel-jest",
+      "~": "<rootDir>/src"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.next/"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/.next/",
+      ".styles.js",
+      "styles.js"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "pages/**/*.{js,jsx}"
+    ]
   }
 }

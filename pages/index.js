@@ -1,18 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
+
+import { Title, Wrapper } from '~pages/Home.styles'
 
 const Home = () => {
   return (
-    <div>
+    <Wrapper>
       <main>
         <Title>Tasky</Title>
       </main>
-    </div>
+    </Wrapper>
   )
 }
-
-const Title = styled.h1`
-  color: red;
-`
 
 export default Home
