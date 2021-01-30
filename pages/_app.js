@@ -2,7 +2,7 @@ import React from 'react'
 
 import GlobalStyle from '~/components/GlobalStyles'
 
-function Tasky({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
@@ -11,4 +11,4 @@ function Tasky({ Component, pageProps }) {
   )
 }
 
-export default Tasky
+export default App
