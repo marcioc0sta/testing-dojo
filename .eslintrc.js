@@ -10,9 +10,16 @@ module.exports = {
   ],
   settings: {
     'import/resolver': {
-      node: {
-        moduleDirectory: ['node_modules', 'src/'],
-      },
+      'babel-plugin-root-import': [
+        {
+          rootPathSuffix: './src',
+          rootPathPrefix: '~/',
+        },
+        {
+          rootPathSuffix: './pages',
+          rootPathPrefix: '~pages/',
+        },
+      ],
     },
   },
   plugins: ['prettier', 'react', 'jest', 'import'],
