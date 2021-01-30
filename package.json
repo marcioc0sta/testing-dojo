@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:all": "jest --env=jsdom --passWithNoTests"
+    "test:all": "jest --passWithNoTests"
   },
   "dependencies": {
     "next": "10.0.6",
