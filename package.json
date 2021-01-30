@@ -50,12 +50,12 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
-      "eslint **/*.js --fix-dry-run"
+      "eslint **/*.js --fix-dry-run",
+      "jest --bail --findRelatedTests"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn test:all",
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
