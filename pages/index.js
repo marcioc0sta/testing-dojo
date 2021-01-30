@@ -1,16 +1,18 @@
-import Head from 'next/head'
+import React from 'react'
+import styled from 'styled-components'
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
-        <div>tasky</div>
+        <Title>Tasky</Title>
       </main>
     </div>
   )
 }
+
+const Title = styled.h1`
+  color: red;
+`
+
+export default Home
