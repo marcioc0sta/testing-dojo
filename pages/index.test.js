@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 
-import Home from './index'
+import Home from './index.page'
 
 describe('Home', () => {
   it('renders without crashing', () => {
