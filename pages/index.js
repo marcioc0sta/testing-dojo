@@ -1,12 +1,15 @@
 import React from 'react'
 
-import { Title, Wrapper } from '~pages/Home.styles'
+import { Instruction, Title, Wrapper } from '~pages/Home.styles'
 
 const Home = () => {
   return (
     <Wrapper>
       <main>
         <Title>Tasky</Title>
+        <Instruction>
+          <p>Input your tasks down bellow:</p>
+        </Instruction>
       </main>
     </Wrapper>
   )

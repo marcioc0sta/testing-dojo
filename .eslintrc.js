@@ -28,6 +28,7 @@ module.exports = {
     node: true,
     es6: true,
     jest: true,
+    'jest/globals': true,
   },
   parser: 'babel-eslint',
   parserOptions: {

@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import colors from '~/utils/colors'
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -13,7 +15,8 @@ const GlobalStyle = createGlobalStyle`
     text-size-adjust: 100%;
   }
   body {
-    background-color: var(--white);
+    background-color: ${colors.WHITE};
+    color: ${colors.MIDNIGHT};
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
